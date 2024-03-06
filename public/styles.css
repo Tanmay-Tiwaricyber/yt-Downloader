@@ -1,0 +1,153 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1142px;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+input[type="text"] {
+  width: calc(100% - 100px);
+  padding: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.download-link-container {
+  margin-top: 20px;
+  text-align: left;
+  word-wrap: break-word;
+  display: block; /* Display each link as a block */
+    margin-bottom: 10px; /* Add bottom margin to create space between links */
+}
+
+.download-link {
+  /* display: block; */
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 4px;
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+  margin-bottom: 10px;
+}
+/* Add CSS styling for download links */
+.download-link-container div {
+  margin-bottom: 10px; /* Add space between each download link */
+  border: 1px solid #ccc; /* Add a border for each download link */
+  padding: 5px; /* Add padding to each download link */
+}
+
+.download-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #007bff;
+}
+
+.file-size {
+  font-size: 14px;
+  color: #888;
+}
+/* Add CSS styling for the glass block */
+.info-block {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.5); /* Transparent white background */
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow for glass effect */
+}
+
+.info-block p {
+  margin: 5px 0;
+}
+
+/* Add CSS styling for the hamburger menu */
+.hamburger-menu {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+/* Add CSS styling for the info block */
+.info-block {
+    display: none; /* Initially hidden */
+    position: fixed;
+    bottom: 60px; /* Adjust as necessary */
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Transparent white background */
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow for glass effect */
+}
+
+/* Show the info block when the 'show' class is applied */
+.info-block.show {
+    display: block;
+}
+/* Add CSS styling for the info block */
+.info-block {
+  display: none; /* Initially hidden */
+  position: fixed;
+  bottom: 60px; /* Adjust as necessary */
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Transparent white background */
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow for glass effect */
+}
+
+/* Show the info block when the 'show' class is applied */
+.info-block.show {
+  display: block;
+}

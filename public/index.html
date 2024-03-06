@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Downloader</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body background="https://images.pexels.com/photos/458983/pexels-photo-458983.jpeg?cs=tinysrgb&w=1920&h=1080&dpr=1">
+    <div class="container">
+        <center><img src="logo.png" alt="" height="100px"></center>
+        <h1>YouTube Video Downloader</h1>
+        <input type="text" id="videoUrl" placeholder="Paste YouTube video URL">
+        <button onclick="fetchDownloadOptions()">Get Download Links</button>
+        <div class="download-link-container" id="downloadOptions"></div>    
+    </div>
+    <!-- Replaced the dot with an image -->
+    <div class="hamburger-menu" onclick="toggleInfoBlock()"><img src="info.png" alt="" height="50px"></div> <!-- Hamburger menu -->
+    <div class="info-block" id="infoBlock"> <!-- Info block initially hidden -->
+        <p>App Information:</p>
+        <p>This app allows you to download videos from YouTube.</p>
+        <p>Dev: Silent Programmer</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
